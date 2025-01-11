@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+
+{% block css %} ../static/styles/style.css {% endblock%}
+
+{% block cont %}
+<div class="pcontainer">
+    <div class="intro">
+        <div class="info-left">
+            <i class="bi bi-chevron-left"></i>
+            <h5>ტელევიზორები</h5>
+        </div>
+        <div class="info-right">
+            <button>სორტირება <i style="font-size: 15px;" class="bi bi-chevron-down"></i></button>
+            <i style="color: rgb(247,188,167);" class="bi bi-window-dock"></i>
+            <i style="color: rgb(169,170,172);" class="bi bi-layout-text-window-reverse"></i>
+        </div>
+    </div>
+    <div class="outro">
+        <div class="outro-left">
+            <div class="out-row">
+                <h5>ფილტრი</h5>
+                <p><i class="bi bi-trash3"></i> გასუფთავება</p>
+            </div>
+            <div class="out-row1">
+                <div class="range-container">
+                    <input type="range" id="minRange" min="0" max="4599" value="0">
+                    <input type="range" id="maxRange" min="0" max="4599" value="4599">
+                </div>
+            </div>
+            <div class="out-row2">
+                <div class="minmax">
+                    <p>MIN:</p>
+                    <p style="font-weight: 700;">0 ₾</p>
+                </div>
+                <div class="minmax">
+                    <p>MAX:</p>
+                    <p style="font-weight: 700;">4749 ₾</p>
+                </div>
+            </div>            
+            <div class="mbrendivarmbrendisheigneee">
+                <div class="topgia">
+                    <p>ბრენდი</p>
+                    <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+                </div>
+                <div style="margin-top: 0;" class="thagia">
+                    <form action="">           
+                        <label for="2">
+                            <input type="checkbox" id="2"> Samsung
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="3">
+                            <input type="checkbox" id="3"> Xiaomi
+                        </label> 
+                    </form>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+                <div class="topgia">
+                    <p>ეკრანის ტიპი</p>
+                    <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+                </div>
+                <div style="margin-top: 0;" class="thagia">
+                    <form action="">           
+                        <label for="7">
+                            <input type="checkbox" id="7"> LCD
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="8">
+                            <input type="checkbox" id="8"> QLED
+                        </label> 
+                    </form>
+                </div>
+            </div>
+
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>შიდა მეხსიერება</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="28">
+                        <input type="checkbox" id="28"> 16 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="29">
+                        <input type="checkbox" id="29"> N/A
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="30">
+                        <input type="checkbox" id="30"> 8 GB
+                    </label> 
+                </form>
+            </div>
+        </div>
+            
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>ოპერაციული სისტემა</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="33">
+                        <input type="checkbox" id="33"> Tizen OS
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="34">
+                        <input type="checkbox" id="34"> Android
+                    </label> 
+                </form>
+            </div>
+        </div>
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>ოპერატიული მეხსიერება</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="36">
+                        <input type="checkbox" id="36"> N/A
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="37">
+                        <input type="checkbox" id="37"> 2 GB
+                    </label> 
+                </form>
+            </div>
+        </div>
+
+
+        </div>
+        <div class="outro-right">
+            <div style="padding: 0 10px;" class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+                {% for product in products %}
+                {% if product['isTV'] %}
+                <div class="card">
+                    <img style="height: 44%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                    {% if product['isbesti'] %}
+                      <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 139px;">BEST PRICE</button>
+                      {% endif %}
+                    <div style="margin-top: 20px;" class="anotha">
+                        <div class="prices">
+                          {% if product['hasoldprice'] != True %}
+                          <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                          {% endif %}
+                              {% if product['hasoldprice']  and product['old-price'] >= 1300%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 47.4px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 1300 > product['old-price'] >= 1080%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 51px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 1080 > product['old-price'] >= 501%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 57px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 89 < product['old-price'] < 501 %}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div class="shua-witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and product['old-price'] <= 89%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div class="mokle-witeli-xazi"></div>
+                              {% endif %}
+                        </div>
+                        <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                    </div>
+                    <h5 class="card-title"><a style="text-decoration: none; color: black; font-size: 11px;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                    <div class="btns">
+                        <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                        <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="metisnaxvaaaa">
+                <button>მეტის ნახვა</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+
+{% block js %} <script src="/static/scripts/app.js"></script> {% endblock%}

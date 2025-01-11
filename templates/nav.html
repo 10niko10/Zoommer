@@ -1,0 +1,44 @@
+<input type="checkbox" id="toggle">
+
+<nav>
+    <div class="top">
+        <div class="left">
+            <a href="">
+                <i class="bi bi-telephone-fill"></i> &nbsp; &nbsp;*7007 / +995 (32) 2 60 30 60
+            </a>
+        </div>
+        <div class="right">
+            <a href="/trade">სავაჭრო პოლიტიკა</a>
+            <a href="/ganvadeba">განვადება</a>    
+            <a href="/career">კარიერა</a>
+            <a href="/tradein">Trade In</a>
+            <a href="/branches">ფილიალები</a>
+            <a href="/aqciebi">ყველა აქცია</a>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="./static/images/zommer.svg" alt="">
+        <div class="rg">
+            <a class="cu" href="/">
+                <img src="./static/images/cubes.png" alt=""><p>ნავიგაცია</p>
+            </a>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <i style="color: rgb(236,94,42)" class="bi bi-search"></i>
+                    <input type="text" name="q" placeholder="ძიება" value="{{ request.args.get('q', '') }}">
+                    <button type="submit" style="display: none;"></button>
+                </form>
+            </div>                
+            <a href="/cart" id="cart-icon">
+                <i class="bi bi-cart"></i> 
+                {% if cart_count > 0 %}
+                <span style="position: absolute; width: 20px; height: 20px; border-radius: 50%; background-color: rgb(237,123,82); top: 16px; margin-right: 40px; color: white; display: flex; justify-content: center; align-items: center;">{{ cart_count }}</span> 
+                {% endif %}
+                <p>კალათა</p>
+            </a>        
+            <a href=""><i class="bi bi-person-circle"></i><p>შესვლა</p></a>
+            <a href=""><img class="geo" src="https://th.bing.com/th/id/OIP.LWvsK24p4IYySTjyHVeKowHaE7?rs=1&pid=ImgDetMain" alt=""></a>
+        </div>
+    </div>
+</nav>
+

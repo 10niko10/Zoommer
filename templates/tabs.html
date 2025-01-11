@@ -1,0 +1,432 @@
+{% extends "base.html" %}
+
+{% block css %} ../static/styles/style.css {% endblock%}
+
+{% block cont %}
+<div class="pcontainer">
+    <div class="intro">
+        <div class="info-left">
+            <i class="bi bi-chevron-left"></i>
+            <h5>პლანშეტები</h5>
+        </div>
+        <div class="info-right">
+            <button>სორტირება <i style="font-size: 15px;" class="bi bi-chevron-down"></i></button>
+            <i style="color: rgb(247,188,167);" class="bi bi-window-dock"></i>
+            <i style="color: rgb(169,170,172);" class="bi bi-layout-text-window-reverse"></i>
+        </div>
+    </div>
+    <div class="outro">
+        <div class="outro-left">
+            <div class="out-row">
+                <h5>ფილტრი</h5>
+                <p><i class="bi bi-trash3"></i> გასუფთავება</p>
+            </div>
+            <div class="out-row1">
+                <div class="range-container">
+                    <input type="range" id="minRange" min="0" max="4599" value="0">
+                    <input type="range" id="maxRange" min="0" max="4599" value="4599">
+                </div>
+            </div>
+            <div class="out-row2">
+                <div class="minmax">
+                    <p>MIN:</p>
+                    <p style="font-weight: 700;">0 ₾</p>
+                </div>
+                <div class="minmax">
+                    <p>MAX:</p>
+                    <p style="font-weight: 700;">5439 ₾</p>
+                </div>
+            </div>            
+            <div class="mbrendivarmbrendisheigneee">
+                <div class="topgia">
+                    <p>ბრენდი</p>
+                    <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+                </div>
+                <div style="margin-top: 0;" class="thagia">
+                    <form action="">           
+                        <label for="2">
+                            <input type="checkbox" id="2"> Realme
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="3">
+                            <input type="checkbox" id="3"> Xiaomi
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="4">
+                            <input type="checkbox" id="4"> Samsung
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="5">
+                            <input type="checkbox" id="5"> Lenovo
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="6">
+                            <input type="checkbox" id="6"> Apple
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <h4>მეტის ნახვა</h4>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+                <div class="topgia">
+                    <p>ეკრანის ზომა</p>
+                    <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+                </div>
+                <div style="margin-top: 0;" class="thagia">
+                    <form action="">           
+                        <label for="7">
+                            <input type="checkbox" id="7"> 12.7 inches
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="8">
+                            <input type="checkbox" id="8"> 12.4 inches
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="9">
+                            <input type="checkbox" id="9"> 9.0 inches
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="10">
+                            <input type="checkbox" id="10"> 11.5 inches
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="11">
+                            <input type="checkbox" id="11"> 11 inches
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <h4>მეტის ნახვა</h4>
+                </div>
+            </div>
+            <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+                <div class="topgia">
+                    <p>SIM ბარათი</p>
+                    <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+                </div>
+                <div style="margin-top: 0;" class="thagia">
+                    <form action="">           
+                        <label for="12">
+                            <input type="checkbox" id="12"> Yes
+                        </label> 
+                    </form>
+                </div>
+                <div class="thagia">
+                    <form action="">           
+                        <label for="14">
+                            <input type="checkbox" id="14"> No
+                        </label> 
+                    </form>
+                </div>
+            </div>
+
+
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>ეკრანის ტიპი</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="17">
+                        <input type="checkbox" id="17"> Liquid Retina IPS LCD
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="18">
+                        <input type="checkbox" id="18"> TFT
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="19">
+                        <input type="checkbox" id="19"> Retina IPS LCD
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="20">
+                        <input type="checkbox" id="20"> Amoled
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="21">
+                        <input type="checkbox" id="21"> IPS LCD
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <h4>მეტის ნახვა</h4>
+            </div>
+        </div>
+
+
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>განახლების სიხშირე</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="24">
+                        <input type="checkbox" id="24"> N/A
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="25">
+                        <input type="checkbox" id="25"> 144 Hz
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="26">
+                        <input type="checkbox" id="26"> 120 Hz
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="27">
+                        <input type="checkbox" id="27"> 90 Hz
+                    </label> 
+                </form>
+            </div>
+        </div>
+
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>შიდა მეხსიერება</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="28">
+                        <input type="checkbox" id="28"> 512 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="29">
+                        <input type="checkbox" id="29"> 64 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="30">
+                        <input type="checkbox" id="30"> 128 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="31">
+                        <input type="checkbox" id="31"> 32 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="32">
+                        <input type="checkbox" id="32"> 256 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <h4>მეტის ნახვა</h4>
+            </div>
+        </div>
+            
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>სისტემა</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="33">
+                        <input type="checkbox" id="33"> Android
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="35">
+                        <input type="checkbox" id="35"> IOS
+                    </label> 
+                </form>
+            </div>
+        </div>
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>ოპერატიული მეხსიერება</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="36">
+                        <input type="checkbox" id="36"> 12 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="37">
+                        <input type="checkbox" id="37"> 4 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="38">
+                        <input type="checkbox" id="38"> 3 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="39">
+                        <input type="checkbox" id="39"> 6 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="40">
+                        <input type="checkbox" id="40"> 8 GB
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <h4>მეტის ნახვა</h4>
+            </div>
+        </div>
+
+        <div style="margin-top: 15px;" class="mbrendivarmbrendisheigneee">
+            <div class="topgia">
+                <p>GPS</p>
+                <i style="font-size: 19px;" class="bi bi-chevron-up"></i></button>
+            </div>
+            <div style="margin-top: 0;" class="thagia">
+                <form action="">           
+                    <label for="41">
+                        <input type="checkbox" id="41"> Yes
+                    </label> 
+                </form>
+            </div>
+            <div class="thagia">
+                <form action="">           
+                    <label for="42">
+                        <input type="checkbox" id="42"> No
+                    </label> 
+                </form>
+            </div>
+        </div>
+
+        </div>
+        <div class="outro-right">
+            <div style="padding: 0 10px;" class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+                {% for product in products %}
+                {% if product['isTab']%}
+                <div class="card">
+                    <img style="height: 44%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                    {% if product['isbesti'] %}
+                      <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 139px;">BEST PRICE</button>
+                      {% endif %}
+                    <div style="margin-top: 20px;" class="anotha">
+                        <div class="prices">
+                          {% if product['hasoldprice'] != True %}
+                          <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                          {% endif %}
+                              {% if product['hasoldprice']  and product['old-price'] >= 1300%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 47.4px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 1300 > product['old-price'] >= 1080%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 51px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 1080 > product['old-price'] >= 501%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div style="top: 187px; right: 57px;" class="witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and 89 < product['old-price'] < 501 %}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div class="shua-witeli-xazi"></div>
+                              {% endif %}
+                              {% if product['hasoldprice']  and product['old-price'] <= 89%}
+                              <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                              <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                              <div class="mokle-witeli-xazi"></div>
+                              {% endif %}
+                        </div>
+                        <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                    </div>
+                    <h5 class="card-title"><a style="text-decoration: none; color: black; font-size: 11px;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                    <div class="btns">
+                        <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                        <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="metisnaxvaaaa">
+                <button>მეტის ნახვა</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block js %} <script src="/static/scripts/app.js"></script> {% endblock%}

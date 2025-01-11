@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block css %} ../static/styles/style.css {% endblock %}
+
+{% block cont %}
+    {% if products %}
+            <div class="result-container1">
+                {% for product in products %}
+            <div class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                    <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 154px;">BEST PRICE</button>
+                    {% endif %}
+                <div class="anotha">
+                <div class="prices">
+                    {% if product['hasoldprice'] != True %}
+                    <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                    {% endif %}
+                    {% if product['hasoldprice']  and product['old-price'] >= 1400%}
+                    <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                    <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                    <div style="top: 197.4px;" class="red-line"></div>
+                    {% endif %}
+                    {% if product['hasoldprice']  and 1400 > product['old-price'] >= 1100%}
+                    <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                    <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                    <div style="right: 58px; top: 197.4px;" class="witeli-xazi2"></div>
+                    {% endif %}
+                        {% if product['hasoldprice']  and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice']  and 99 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div  class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice']  and product['old-price'] <= 99%}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a class="add-to-cart-link" id="add_to_cart_link_{{ product['id'] }}" style="display: flex; justify-content: center;" href="{{ url_for('add_to_cart', product_id=product['id']) }}">
+                    <i class="bi bi-cart"></i> დამატება
+                    </a> 
+                </div>
+            </div>{% endfor %}
+    </div>
+    {% else %}
+        <p>No products found for "{{ query }}".</p>
+    {% endif %}
+        
+    
+{% endblock %}
+
+{% block js %}
+    <script src="/static/scripts/app.js"></script>
+{% endblock %}
+
+    

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block css %} ../static/styles/cart.css {% endblock %}
+
+{% block cont %}
+    <h2>შენს კალათაში <span style="font-weight: 600;">{{ cart_count }}</span> ნივთია</h2>
+
+    <div id="cart">
+        <div class="items">
+            {% if cart %}
+            {% for product in cart %}
+                <div class="cart-item">
+                    <div class="start">
+                        <img src="{{ product['image'] }}" alt="{{ product['name'] }}">
+                        <div class="stats">
+                            <p>{{ product['name'] }}</p>
+                            <span>{{ product['price'] }} ₾</span>
+                        </div>
+                    </div>
+                    <div class="end">
+                        <div class="button">
+                            <form action="{{ url_for('decrease_quantity', product_id=product['id']) }}" method="POST" style="display: inline;">
+                                <button class="quantity-btn decrease" type="submit">-</button>
+                            </form>
+                            <span class="quantity" id="quantity_{{ product['id'] }}">{{ product.get('quantity', 1) }}</span>
+                            <form action="{{ url_for('increase_quantity', product_id=product['id']) }}" method="POST" style="display: inline;">
+                                <button class="quantity-btn increase" type="submit">+</button>
+                            </form>
+                        </div>
+                        <a href="{{ url_for('remove_from_cart', product_id=product['id']) }}" class="remove-item">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <img src="https://zoommer.ge/icons/emptybag.svg" alt="">
+        {% endif %}
+        </div>
+        <div class="girebuleba">
+            <div class="top">
+                <div class="rowww">
+                    <p>ღირებულება</p>
+                    <span>{{ total_price }} ₾</span>
+                </div>
+                <div class="rowww">
+                    <p>მიწოდების ღირებულება</p>
+                    <span>0 ₾</span>
+                </div>
+                <div class="rowww">
+                    <p>გადასახდელი თანხა</p>
+                    <span style="color: rgb(236,94,42);">{{ total_price }} ₾</span>
+                </div>
+            </div>
+            <button>შემდეგი</button>
+            
+        </div>
+
+    </div>
+
+    <div class="popup-container">
+        <div class="popup">
+            <div class="popup-header">
+                <h3>პროდუქტის ამოშლა</h3>
+                <button class="close"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="popup-body">
+                <p>ნამდვილად გსურთ პროდუქტის ამოშლა?</p>
+            </div>
+            <div class="popup-footer">
+                <button class="confirm">დიახ</button>
+                <button class="cancel">არა</button> 
+            </div>            
+        </div>
+    </div>
+    
+
+{% endblock %}
+
+
+{% block js %} <script src="/static/scripts/cart.js"></script> {% endblock%}

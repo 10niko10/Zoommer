@@ -1,0 +1,2276 @@
+{% extends "base.html" %}
+
+{% block css %} ../static/styles/style.css {% endblock%}
+
+{% block cont %}
+<div class="container">
+    <div class="mtavari">
+        <div class="isriani">
+            <h5>მთავარი &nbsp; <i class="bi bi-chevron-right"></i> &nbsp; {{ product['info1'] }} &nbsp; <i class="bi bi-chevron-right"></i> &nbsp;
+                {% if product['isApple'] %} <i class="bi bi-apple"></i> {% endif %} 
+                {% if product['isSamsung'] %}  {% endif %}
+                {% if product['isXiaomi'] %} <img style="width: 35px;" src="https://s3.zoommer.ge/site/a6bd2888-30da-429e-a0b3-674b7c724653_Thumb.png" alt=""> {% endif %}
+                {% if product['isGoPro'] %} <img style="width: 50px;" src="https://s3.zoommer.ge/site/8f8bc543-78ab-4a08-bcbd-4edf61105415_Thumb.png" alt=""> {% endif %}
+                {% if product['isMeta'] %} <img style="width: 50px;" src="https://s3.zoommer.ge/site/0c4d7d8e-d53a-405c-a553-f09ef5691d64_Thumb.png" alt=""> {% endif %}
+                {% if product['isDJI'] %} <img style="width: 30px;" src="https://s3.zoommer.ge/site/1dfc4186-7510-48f2-b708-92a49aa70754_Thumb.png" alt=""> {% endif %}
+                {% if product['isGoogle'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/26561827-9de4-48c1-a706-240eeddd936a_Thumb.png" alt=""> {% endif %}
+                {% if product['isOnePlus'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/5e77f544-1557-49b8-9045-a94ebb5cd032_Thumb.png" alt=""> {% endif %}
+                {% if product['isNothing'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/7bd9b6dc-9107-4042-ba3b-b2baa5d45442_Thumb.png" alt=""> {% endif %}
+                {% if product['isAsus'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/05843395-dbb1-489f-9504-f1abba4ffc43_Thumb.png" alt=""> {% endif %}
+                {% if product['isRazer'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/d2b81a1f-bd1d-49ea-b6fd-8b9b30ae5801_Thumb.png" alt=""> {% endif %}
+                {% if product['isCanon'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/0325fc79-4961-4bc6-88b7-eec675ae2a51_Thumb.png" alt=""> {% endif %}
+                {% if product['isAnker'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/a6c52eff-5fe3-4634-b9e9-62c8521cd920_Thumb.png" alt=""> {% endif %}
+                {% if product['isRealme'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/56931187-555f-47cb-8f3c-6f0eaa75b2fd_Thumb.png" alt=""> {% endif %}
+                {% if product['isSpigen'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/7d89f288-51d8-4b9c-ad64-a921de9542b0_Thumb.png" alt=""> {% endif %}
+                {% if product['isDyson'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/71ab5109-f13f-4193-a720-e3b60700f6f5_Thumb.png" alt=""> {% endif %}
+                {% if product['isPhilips'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/043b1bc9-6c92-4823-b8c9-851853deb8b9_Thumb.png" alt=""> {% endif %}
+                {% if product['isMarshall'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/d546faed-f63f-405f-8f78-3a33d3275de9_Thumb.png" alt=""> {% endif %}
+                {% if product['isHavit'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/cd1bd427-e557-4129-a38b-fe2e7f958642_Thumb.png" alt=""> {% endif %}
+                {% if product['isSony'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/234c1510-2695-4479-9e94-1b83be8d87ff_Thumb.png" alt=""> {% endif %}
+                {% if product['isHyperX'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/79ef11dd-40b1-42a5-907c-af5453991789_Thumb.png" alt=""> {% endif %}
+                {% if product['isJBL'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/a080fa8b-b53a-4173-a723-2f4c2994ce50_Thumb.png" alt=""> {% endif %}
+                {% if product['isBose'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/a8436340-f6df-489c-bdcf-9cc8fb59ebcf_Thumb.png" alt=""> {% endif %}
+                {% if product['isPlayStation'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/568ac10d-09b0-4b58-9b71-409fb3a3680e_Thumb.png" alt=""> {% endif %}
+                {% if product['isNintendo'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/2c808caa-21ef-441f-bd39-e3dd05cc28b7_Thumb.png" alt=""> {% endif %}
+                {% if product['isXbox'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/f02b08ea-3a99-463e-b520-a1d2353d5592_Thumb.png" alt=""> {% endif %}
+                {% if product['isBackbone'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/36d60f75-aa94-484c-97d9-d384b06fd8b9_Thumb.png" alt=""> {% endif %}
+                {% if product['isSteamDeck'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/3cd327af-b714-4aa9-a102-69a6e20663fb_Thumb.png" alt=""> {% endif %}
+                {% if product['isBaseus'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/1234b1b3-7322-4cf9-af2b-8d960c0a80fb_Thumb.png" alt=""> {% endif %}
+                {% if product['isAmazon'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/46a3e2a5-c054-4221-97a0-814c1baca77d_Thumb.png" alt=""> {% endif %}
+                {% if product['isDeerma'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/5c09731f-a438-4899-b0f4-623a0d11d1b0_Thumb.png" alt=""> {% endif %}
+                {% if product['isGovee'] %} <img style="width: 40px;" src="https://s3.zoommer.ge/site/fac27865-2d4c-4e62-83dc-407fd908f063_Thumb.jpeg" alt=""> {% endif %}
+                {{ product['info2'] }}</h5>
+            <h4> <img src="../static/images/share.png" alt=""> {{ product['zoom'] }}</h4>
+        </div>
+        <div class="tvitoninfo">
+            <div class="macxenamxare">
+               <h6>{{ product['fullName'] }} {% if product.id == 9 %}, 16GB RAM SSD 1TB, Free Dos, ლეპტოპი{% endif %}  {% if product.id == 14 %}SSD 512GB, Free Dos, ლეპტოპი{% endif %}  
+                {% if product.id == 17 %}SSD 512GB, Free Dos, ლეპტოპი{% endif %} {% if product.id == 20 %}SSD 256GB, Free Dos, ლეპტოპი{% endif %}  
+                {% if product.id == 21 %} SSD 512GB, Free Dos, ლეპტოპი{% endif %}   {% if product.id == 25 %} SSD 512GB, Free Dos, ლეპტოპი{% endif %}  
+                {% if product.id == 26 %} SSD 512GB, Free Dos, ლეპტოპი{% endif %}   {% if product.id == 29 %} SSD 512GB, Free Dos, ლეპტოპი{% endif %}  
+            </h6> 
+               <div id="carouselExampleIndicators" class="carousel slide">
+                <div style="position: absolute; top: 320px; display: flex; gap: 20px;" class="carousel-indicators">
+                  <button style="background-color: rgb(236,94,42);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  {% if product.image1 %}
+                  <button style="background-color: rgb(236,94,42);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  {% endif %}
+                  {% if product.image2 %}
+                    <button style="background-color: rgb(236,94,42);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  {% endif %}
+                  {% if product.image3 %}
+                    <button style="background-color: rgb(236,94,42);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  {% endif %}
+                  {% if product.image4 %}
+                    <button style="background-color: rgb(236,94,42);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  {% endif %}
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{{ product['image'] }}" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{ product['image1'] }}" alt="...">
+                  </div>
+                  {% if product.image2 %}
+                  <div class="carousel-item">
+                    <img src="{{ product['image2'] }}"  alt="...">
+                  </div>
+                  {% endif %}
+                  {% if product.image3 %}
+                  <div class="carousel-item">
+                      <img src="{{ product.image3 }}" alt="...">
+                  </div>
+                  {% endif %}
+                  {% if product.image4 %}
+                  <div class="carousel-item">
+                      <img src="{{ product.image4 }}" alt="...">
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+              <i class="bi bi-heart" id="heart-icon"></i>
+            </div>
+            <div class="marjvenamxare">
+                {% if product.infos %}
+                <div class="infos">
+                    {% for key, value in product.infos.items() %}
+                        <div class="info-row">
+                            <p {% if product['isDJI'] or product['isAnker']%} style="color: white;" {% endif %} class="span1">{{ key }}</p>
+                            <p {% if product['isDJI'] or product['isAnker']%} style="color: white;" {% endif %} class="span2">{{ value }}</p>
+                        </div>
+                    {% endfor %}
+                    
+                {% endif %}
+                {% if product.feri %}
+                    <div style="margin-top: 10px;" class="some-row">
+                        <p class="span1" >ფერი:</p> &nbsp;
+                        <p class="span2">{{ product['feri'] }}</p>
+                    </div>
+                {% endif %}
+                    
+                </div>
+                <div class="ferebi">
+                    {% if product.color1 %}
+                        <div style="background-color: {{product['color1']}};" class="wreebi"></div>
+                    {% endif %}
+                    {% if product.color2 %}
+                        <div style="background-color: {{product['color2']}};" class="wreebi"></div>
+                    {% endif %}
+                    {% if product.real_color %}
+                        <div style="background-color: {{product['real_color']}};" class="real-wreebi"></div>
+                    {% endif %}
+                    {% if product.color3 %}
+                        <div style="background-color: {{product['color3']}};" class="wreebi"></div>
+                    {% endif %}
+                    {% if product.color4 %}
+                        <div style="background-color: {{product['color4']}};" class="wreebi"></div>
+                    {% endif %}
+                    
+                </div>
+                <div style="margin-top: 10px;" class="infos">
+                    {% if product.memory %}
+                    {% for key, value in product.memory.items() %}
+                        <div class="some-row">
+                            <p class="span1">{{ key }}</p> &nbsp;
+                            <p class="span2">{{ value }}</p>
+                        </div>
+                    {% endfor %}
+                    {% endif %}
+            </div>
+            <div class="btnsebei">
+                {% if product.act_memory %}
+                <button class="actual-btn">{{product['act_memory']}} {% if not product['isTV'] and not product['isBuds'] %}GB{% endif %}</button>
+                {% endif %}
+                {% if product.other_memory %}
+                    {% for key, value in product['other_memory'].items() %}
+                        <button class="other-btn">{{ value }} {% if not product['isTV'] and not product['isBuds'] and not product['isConsole']%}GB{% endif %}</button>                       
+                    {% endfor %}
+                {% endif %}
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% if not product['isGoPro'] and not product.id ==151 and not product.id ==127 and not product.id ==130 and not product.id ==133 and not product.id ==135 and not product.id ==137 and not product.id ==136 and not product.id ==134 and not product.id ==129 and not product.id ==128 and not product['isaqsesuari'] and not product.id ==43 and not product.id ==40 and not product['isMeta'] and not product['isCanon'] and not product.id == 39 %}
+<div class="row-container1">
+    <div style="display: flex; justify-content: space-between; align-items: center;" class="rowi">
+        <h3 style="display: flex; font-size: 22px; font-weight: 800;">ერთად იაფია</h3>
+        <p style="display: flex; align-items: center; gap: 5px;"><i style="margin-top: 5px;" class="bi bi-plus-circle"></i> &nbsp;დაამატე ნივთი</p>
+    </div>
+</div>
+{% endif %}
+
+{% if not product['isGoPro'] and not product.id ==151 and not product.id ==127 and not product.id ==135 and not product.id ==137 and not product.id ==136 and not product.id ==130 and not product.id ==133 and not product.id ==134 and not product.id ==129 and not product.id ==128 and not product['isaqsesuari'] and not product.id ==43 and not product.id ==40 and not product['isMeta'] and not product['isCanon'] and not product['isAnker'] and not product.id == 39 %}
+<div style="border: 1px solid orangered;" class="row-container">
+    <div style="margin-bottom: 29px;" class="rowi">
+        <img src="{{ product['image'] }}" alt="">
+        <div class="pricebi">
+            <p style="height: 2px;"> {{ product['fullName'] }}</p>
+            <p style="height: 2px; margin-top: 9px; font-size: 14px; font-weight: 700; color: black;">{{ product['price'] }} ₾</p>
+        </div>
+    </div>
+    {% for rawr in product['rawrs'] %}
+        <div style="justify-content: space-between; align-items: center; margin: 20px 0;" class="rowi">
+            <div style="display: flex; align-items: center;" class="aa">
+                <img src="{{ rawr['item-img'] }}" alt="">
+                <div class="pricebi">
+                    <p style="height: 2px; margin-top: 15px;"> {{ rawr['item'] }} </p>
+                    <p style="height: 2px; margin-top: 10px; font-size: 14px; font-weight: 700; color: black;">{{ rawr['item-price']}} ₾  
+                        <span>{{ rawr['item-old-price'] }} ₾ <div class="span-witeli-xazi"></div></span></p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px; " class="bb">
+                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-pencil"></i>
+            </div>
+        </div>
+      
+    {% endfor %}
+    <div style="justify-content: space-between; align-items: center; margin: 20px 0;" class="rowi">
+        <div style="display: flex; flex-direction: column; gap: 8px;" class="fasunkalebi">
+            <p style="height: 2px; color: gray; font-size: 13px;">ჯამური ფასი:</p>
+            <p style="height: 2px; font-size: 20px; color: rgb(237,103,55); font-weight: 700;">{{ product['total'] }} ₾  <span style="margin-left: 12px; font-size: 16px; color: grey; font-weight: 500; color:red; text-decoration:line-through"><span style="color: rgb(108, 108, 108);">{{ product['old-total'] }} ₾</span></span></p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;" class="btnkalebi">
+            <a style="border: 1px solid rgb(238,123,80); border-radius: 5px; padding: 15px 20px; background-color: white;" href=""><i style="font-size: 17px; color: black;" class="bi bi-cart"></i></a>
+            <a style=" padding: 15px 60px; background-color: rgb(236,94,42); border-radius: 5px; text-decoration: none; color: white; font-size: 17px; font-weight: 700;" href="">ყიდვა</a>
+        </div>
+    </div>
+    
+</div>
+{% endif %}
+<br>
+<br>
+
+{% if product['isgift']%}
+<div style="padding-left: 54px;" class="giftebisa">
+    <div style="display: flex; gap: 13px; align-items: center;" class="gifzemota">
+        <img src="https://zoommer.ge/icons/gift.svg" style="width: 40px;" alt="">
+        <h4 style="font-weight: 900; margin-top: 20px;">პროდუქტს მოყვება საჩუქარი</h4>
+    </div>
+    <br>
+    <div style="padding-left: 5px; display: flex; align-items: center;" class="gifqvemota">
+        <div style="display: flex; border-radius: 10px; justify-content: center; align-items: center; background-color: rgb(247,247,247); padding: 9px; gap: 8.5px; padding-right: 400px;" class="tvitongifti">
+            <img style="width: 50px;" src="{{ product.gifti.gift_img }}" alt="">
+            <div style="display: flex; flex-direction: column;" class="gv">
+                <p style="color: rgb(29, 28, 28); font-size: 12px; font-weight: 600; height: 5px;">{{ product.gifti.gift_name }}</p>
+                <p style="color: rgb(108, 107, 107); font-weight: 600; height: 5px;">{{ product.gifti.gift_price }}</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<br>
+<br>
+{% endif %}
+
+
+
+
+
+
+
+<div style="width: 780px; padding: 0; margin-left: 54px; {% if product['isGoPro'] %}margin-left: 155px;{% endif%}" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;">{% if not product['isMeta'] and not product.id ==151 and not product.id ==124 and not product.id ==129 and not product.id ==135 and not product.id ==137 and not product.id ==136 and not product.id ==130  and not product.id ==133 and not product.id ==134 and not product.id ==127 and not product.id ==128 and not product['isaqsesuari'] and not product['isConsole'] and not product['isMovla'] and not product.id ==43 and not product.id ==36 and not product['isDJI'] and not product['isWatch']  and not product['isMouse'] and not product['isCamera'] and not product['isAnker']%}<span style="color: black;">აქსესუარები </span>&nbsp; &nbsp;{% endif %}
+        {% if not product['isGoPro'] and not product['isConsole'] and not product.id ==151 and not product['isaqsesuari'] and not product['isMovla'] and not product.id ==43 and not product.id ==36 and not product['isMeta'] and not product['isWatch']  and not product['isMouse'] and not product['isCamera'] and not product['issmarthouse'] and not product['isAnker']%}მსგავსი &nbsp;&nbsp;{% endif %}
+        მახასიათებლები &nbsp;&nbsp;
+        ფილიალები</h5>
+    {% if not product['isGoPro'] and not product.id ==151 and not product['issmarthouse'] and not product['isaqsesuari'] and not product['isConsole'] and not product['isHeadphone'] and not product['isTV'] and not product['isMovla'] and not product.id ==43 and not product.id ==36 and not product['isMeta'] and not product['isDJI'] and not product['isLaptop'] and not product['isTab'] and not product['isWatch']  and not product['isMouse'] and not product['isCamera'] and not product['isAnker']%}
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1300px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1300px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1400px; left: 90px; {% if product['isBuds'] %}top: 1240px;{% endif%}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1400px; left: 900px; {% if product['isBuds'] %}top: 1240px;{% endif%}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['isdetaqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if product['issmarthouse'] and not product.id ==124 and not product.id ==125 and not product.id ==127 and not product.id ==130 and not product.id ==133 and not product.id ==135 and not product.id ==137 and not product.id ==136 and not product.id ==134 and not product.id ==129 and not product.id ==128%}
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1300px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1300px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1400px; left: 90px; {% if product['isBuds'] %}top: 1240px;{% endif%}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1400px; left: 900px; {% if product['isBuds'] %}top: 1240px;{% endif%}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['issmartaqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-right: 10px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if product['isLaptop'] or product['isHeadphone']%}
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1570px; left: 90px; {% if product['isHeadphone']%} top: 1310px; {% endif%}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1570px; left: 900px; {% if product['isHeadphone']%} top: 1310px; {% endif%}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1420px; left: 90px;  {% if product['isgift']%} top: 1610px; {% endif%} {% if product['isHeadphone']%} top: 1250px; {% endif%}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1420px; left: 900px; {% if product['isgift']%} top: 1610px; {% endif%} {% if product['isHeadphone']%} top: 1250px; {% endif%}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['islaptopqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if product['isTV']%}
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1570px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1570px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1420px; left: 90px;  {% if product['isgift']%} top: 1610px; {% endif%}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1420px; left: 890px; {% if product['isgift']%} top: 1610px; {% endif%}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['isTVaqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if product['isTab']%}
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1340px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1340px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 880px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 880px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['istabaqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if product['isGoPro'] %}
+    <div style="margin-left: 90px;" class="row">
+    
+        <div class="card-slider slider14">
+            {% for product in products %}
+            {% if product['isgoproaqsesuari'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 150px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 228px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% if product['isGoPro']%}
+<div style="top: 1120px; " class="white-div14"></div>
+{% endif %}
+
+{% if product['isDJI']%}
+<div style="top: 1540px; " class="white-div14"></div>
+{% endif %}
+
+{% if product['isSamsung'] and not product['isWatch'] and not product['isHeadphone'] and not product['isBuds'] and not product.id ==36 and not product.id ==41 and not product['isTV'] and not product.id ==13 and not product.id ==143%}
+<div style="top: 1540px;" class="white-div14"></div>
+{% endif %}
+
+{% if not product['isGoPro'] and not product.id ==151 and not product.id ==151 and not product.id ==124 and not product.id ==125 and not product.id ==127 and not product.id ==130 and not product.id ==133 and not product.id ==135 and not product.id ==137 and not product.id ==136 and not product.id ==134 and not product.id ==129 and not product.id ==128 and not product['isaqsesuari'] and not product['isConsole'] and not product['isBuds'] and not product['isMovla'] and not product.id ==43 and not product.id ==39 and not product['isMeta'] and not product['isRealme'] and not product['isNothing'] and not product['isDJI'] and not product['isAnker'] and not product['isOnePlus'] and not product['isLaptop'] and not product['isWatch']  and not product['isMouse'] and not product['isCamera'] %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1529px;" class="white-div14"></div>
+{% else %}
+<div class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product.id == 39  %}
+<div style="top: 1100px;" class="white-div14"></div>
+{% endif%}
+
+
+{% if product['isRealme'] and not product['isBuds'] %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1549px;" class="white-div14"></div>
+{% else %}
+<div class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isHeadphone'] %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1549px;" class="white-div14"></div>
+{% else %}
+<div style="top: 1461px; {% if product.id == 93 %}top: 1480px; {% endif%}" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isBuds'] %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1549px;" class="white-div14"></div>
+{% else %}
+<div style="top: 1463px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isNothing'] and not product.id ==40 %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1579px;" class="white-div14"></div>
+{% else %}
+<div class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isOnePlus']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1540px;" class="white-div14"></div>
+{% else %}
+<div class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product['isLenovo'] and not product['isConsole']  and not product['isgift'] and not product.id == 39 %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1540px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 20px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isLenovo'] and product['isgift']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1540px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 209.1px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product.id == 10 %}
+<div style="top: 1640px;" class="white-div14"></div>
+{% endif%}
+
+{% if product['isAsus'] and not product['isgift']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1540px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 40px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isAsus'] and product['isgift'] and not product.id == 29 %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1800px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 214px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product['isAsus'] and product['isgift'] and product.id == 29 %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1800px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 234px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product['isHP']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 1540px;" class="white-div14"></div>
+{% else %}
+<div style="margin-top: 20px;" class="white-div14"></div>
+{% endif%}
+{% endif%}
+<br>
+<br>
+
+
+{% if product['isApple'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isApple'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product['isBuds'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1740px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1740px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isBuds'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 0.4px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product['isHeadphone'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1740px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1740px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isHeadphone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 0.4px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isSamsung'] and product['isPhone'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isSamsung'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 217px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isTab'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1380px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1380px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isTab'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isXiaomi'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 890px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isXiaomi'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isRealme'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1820px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1820px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isRealme'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isOnePlus'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 890px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isOnePlus'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isTV'] and product['isXiaomi'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isTV'] and product['isXiaomi'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+{% if product['isTV'] and product['isSamsung'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isTV'] and product['isSamsung'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+{% if product['isLaptop'] and product['isLenovo'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isLaptop'] and product['isLenovo'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product['isLaptop'] and product['isHP'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isLaptop'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isLaptop'] and product['isAsus'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 2050px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 2050px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1940px; left: 90px;  {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1940px; left: 900px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isLaptop'] and product['isAsus'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product['isLaptop'] and product['isApple'] %}
+<div style="width: 750px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 2050px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 2050px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1940px; left: 90px;  {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1940px; left: 900px; {% if product['isgift']%} top: 2115px; {% endif %}" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isLaptop'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product['isNothing'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 900px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 900px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isNothing'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 56px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+{% if product['isGoogle'] and product['isPhone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 2 %}
+        <button style="position: absolute; top: 1800px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1800px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 890px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isGoogle'] and product['isPhone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 55px; top: 197.4px;" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+{% if product['isDJI'] and product['isDrone'] %}
+<div style="width: 780px; padding: 0; margin-left: 54px;" class="sulswrafi">
+    <h5 style="color: gray; font-weight: 600;"><span style="color: black;">მსგავსი პროდუქტები</span></h5>
+    <div class="row">
+        {% if product.rawrs|length == 1 %}
+        <button style="position: absolute; top: 1320px; left: 90px; " class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1320px; left: 890px; " class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% else %}
+        <button style="position: absolute; top: 1900px; left: 90px;" class="slider-btn prev slider14-prev">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button style="position: absolute; top: 1900px; left: 890px;" class="slider-btn next slider14-next">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    {% endif %}
+        <div class="card-slider slider15">
+            {% for product in products %}
+            {% if product['isDJI'] and product['isDrone'] %}
+            <div style="margin-right: 5px;" class="card">
+                <img style="height: 50%;" src="{{ product['image'] }}" class="card-img-top" alt="...">
+                {% if product['isbesti'] %}
+                <button style="position: absolute; width: 70px; height: 28px; font-weight: 600; font-size: 9px; top: 155px;">BEST PRICE</button>
+                {% endif %}
+                <div class="anotha">
+                    <div class="prices">
+                        {% if product['hasoldprice'] != True %}
+                        <p style="color: black; font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] >= 1400 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 197.4px;" class="red-line"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 1400 > product['old-price'] >= 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="right: 58px" class="witeli-xazi2"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 501 < product['old-price'] < 1100 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="top: 198.3px;" class="witeli-xazi1"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and 89 < product['old-price'] < 500 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div style="margin-top: 20px;" class="shua-witeli-xazi"></div>
+                        {% endif %}
+                        {% if product['hasoldprice'] and product['old-price'] <= 89 %}
+                        <p style="color: rgb(236,94,42);font-weight: 700; height: 10px;">{{ product['price'] }} ₾</p>
+                        <p style="height: 10px;"><span>{{ product['old-price'] }} ₾</span></p>
+                        <div class="mokle-witeli-xazi"></div>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 9px; display: inline;">თვეში: <span style="color: rgb(236,94,42);">{{ product['monthly'] }} ₾</span> - დან</p>
+                </div>
+                <h5 class="card-title"><a style="text-decoration: none; color: black;" href="/{{ product['id'] }}">{{ product['name'] }}</a></h5>
+                <div class="btns">
+                    <button class="btn1"><i class="bi bi-arrow-left-right"></i></button>
+                    <a style="display: flex; justify-content: center;" href=""><i class="bi bi-cart"></i> დამატება</a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+
+
+{% if not product['isGoPro'] and not product['issmarthouse'] and not product['isaqsesuari'] and not product['isConsole'] and not product['isBuds'] and not product['isHeadphone'] and not product['isMovla'] and not product.id ==43 and not product.id == 39 and not product.id ==36 and not product['isMeta'] and not product['isNothing'] and not product['isDJI'] and not product['isAnker'] and not product['isOnePlus'] and not product['isLaptop'] and not product['isWatch']  and not product['isMouse'] and not product['isCamera']%}
+    {% if product.rawrs|length == 2 %}
+        <div style="top: 2030px;" class="white-div15"></div>
+    {% else %}
+    <div {% if product.id ==41 or product.id ==13 or product.id ==143 %} style="margin-top: 10px;"{% endif %} class="white-div15"></div>
+    {% endif%}
+{% endif %}
+
+{% if product['isBuds']%}
+    {% if product.rawrs|length == 2 %}
+        <div style="top: 2030px;" class="white-div15"></div>
+    {% else %}
+    <div style="top: 1950px;" class="white-div15"></div>
+    {% endif%}
+{% endif %}
+
+{% if product['isNothing'] and not product.id ==40 and not product['isBuds'] %}
+    {% if product.rawrs|length == 2 %}
+        <div style="top: 2060px;" class="white-div15"></div>
+    {% else %}
+    <div class="white-div15"></div>
+    {% endif%}
+{% endif %}
+
+
+{% if product['isHeadphone'] %}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2030px;" class="white-div14"></div>
+{% else %}
+<div style="top: 1950px; {% if product.id == 93 %}top: 1970px; {% endif%}" class="white-div14"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isOnePlus']%}
+    {% if product.rawrs|length == 2 %}
+        <div style="top: 2030px;" class="white-div15"></div>
+    {% else %}
+    <div style="margin-top: 12px;" class="white-div15"></div>
+{% endif %}
+{% endif %}
+
+{% if product['isLenovo'] and not product['isgift']  and not product.id == 39%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2030px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 22px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+{% if product.id == 39 %}
+<div style="top: 1580px;" class="white-div15"></div>
+{% endif%}
+
+{% if product.id == 10 %}
+<div style="top: 2120px;" class="white-div15"></div>
+{% endif%}
+
+{% if product['isLenovo'] and product['isgift']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2030px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 218.7px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product['isAsus'] and not product['isgift']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2030px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 42px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isAsus'] and product['isgift'] and not product.id == 29%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2270px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 222px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+{% if product['isAsus'] and product['isgift'] and product.id == 29%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2270px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 242px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+
+{% if product['isHP']%}
+{% if product.rawrs|length == 2 %}
+<div style="top: 2030px;" class="white-div15"></div>
+{% else %}
+<div style="margin-top: 20px;" class="white-div15"></div>
+{% endif%}
+{% endif%}
+
+<div class="damatebiti-row-cont">
+    <div style="padding-bottom: 0; {% if product['isGoPro'] %}padding-left: 155px;{% endif%}" class="damat-row">
+        <h5 style="color: gray; font-weight: 600;"><span style="color: black;">დამატებითი მახასიათებლები</span></h5>
+    </div>
+    {% for key, value in product.damatebitebi.items() %}
+    <div style="padding-bottom: 0; {% if product['isGoPro'] %}padding-left: 155px;{% endif%}" class="damat-row"> 
+        <div class="dam-zemo">
+            <p style="color: black; font-weight: 700; font-size: 18px;">{{ key }}</p>
+            <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="dam-qvemo">
+            <p style="color: gray; font-size: 16px;">{{ key }}:</p>
+            <div class="raptaptap">
+                <span style="color: black; font-size: 14px; font-weight: 600;">{{ value }}</span>
+                <p style="color: white;">.</p>
+            </div>
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br>
+<button class="meti">მეტის ნახვა <i class="bi bi-chevron-down"></i></button>
+<div style="height: 0.5px; width: 65%; background-color: lightgray; margin-top: 40px;" class="nacrisferixazi"></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 40px 60px; width: 65.5%;" class="rowi">
+    <p style="color: black; font-weight: 700; font-size: 18px;">გაეცანი საგარანტიო პირობებს</p>
+    <button class="saga">საგარანტიო პირობები</button>
+</div>
+<div style="height: 0.5px; width: 65%; background-color: lightgray; " class="nacrisferixazi"></div>
+
+
+<div {% if product['isGoPro'] %}style="padding-left: 55px;"{% endif%} class="filialebi">
+    <div class="rowa">
+        <h5 style="color: gray; font-weight: 600;"><span style="color: black;">ფილიალები</span></h5>
+        <form action="">
+            <label for="1">
+                <input type="checkbox" id="1" checked> მარაგშია
+            </label>             
+            <label for="2">
+                <input type="checkbox" id="2"> შეკვეთიდან 2-5 დღეში
+            </label> 
+        </form>
+    </div>
+    <div class="rowaa">
+        <div style="padding-top: 30px; border-top-left-radius: 10px; border-top-right-radius: 10px;" class="rowa1">
+            <p class="pirvelizazia">ზუმერის წერეთლის ფილიალი</p>
+            <p style="color: rgb(236,109,62);" class="pirvelizazia">+995 591 967 601</p>
+        </div>
+        <div class="rowa1">
+            <p class="shuaxazia">თბილისი - წერეთლის გამზ. N1</p>
+            <p class="shuaxazia">ორშ-შაბ: 10:00:00 - 20:00:00</p>
+        </div>
+        <div style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="rowa1">
+            <p>მარაგშია</p>
+            <p class="shuaxazia">კვირა: 10:00:00 - 19:00:00</p>
+        </div>
+    </div>
+    <div class="rowaa">
+        <div style="padding-top: 30px; border-top-left-radius: 10px; border-top-right-radius: 10px;" class="rowa1">
+            <p class="pirvelizazia">ზუმერის პეკინის ფილიალი</p>
+            <p style="color: rgb(236,109,62);"  class="pirvelizazia">+995 591 967 671</p>
+        </div>
+        <div class="rowa1">
+            <p class="shuaxazia">თბილისი - კ.გამსახურდიას (პეკინის) გამზირი N14ა</p>
+            <p class="shuaxazia">ორშ-შაბ: 10:00:00 - 21:00:00</p>
+        </div>
+        <div style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="rowa1">
+            <p>მარაგშია</p>
+            <p class="shuaxazia">კვირა: 10:00:00 - 20:00:00</p>
+        </div>
+    </div>
+    <div class="rowaa">
+        <div style="padding-top: 30px; border-top-left-radius: 10px; border-top-right-radius: 10px;" class="rowa1">
+            <p class="pirvelizazia">ზუმერის "თბილისი ცენტრალის" ფილიალი</p>
+            <p style="color: rgb(236,109,62);"  class="pirvelizazia">+995 599 862 449</p>
+        </div>
+        <div class="rowa1">
+            <p class="shuaxazia">თბილისი - "თბილისი ცენტრალი"- lll სართული</p>
+            <p class="shuaxazia">ორშ-შაბ: 10:00:00 - 20:00:00</p>
+        </div>
+        <div style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="rowa1">
+            <p>მარაგშია</p>
+            <p class="shuaxazia">კვირა: 10:00:00 - 19:00:00</p>
+        </div>
+    </div>
+</div>
+<br>
+<button style="background-color: white;" class="meti">მეტის ნახვა <i class="bi bi-chevron-down"></i></button>
+<div style="height: 0.5px; width: 65%; background-color: lightgray; margin-top: 40px;" class="nacrisferixazi"></div>
+
+
+</div>
+
+<div class="grey-divi">
+    <div class="gtop">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 14px;" class="etimxare">
+            {% if product['hasoldprice'] != True %}
+        <p style="color: rgb(236,94,42);font-weight: 700; font-size: 21px;">{{ product['price'] }} ₾</p>
+        {% endif %}
+        {% if product['hasoldprice']  and product['old-price'] >= 0%}
+        <p style="color: rgb(236,94,42);font-weight: 700; font-size: 21px;">{{ product['price'] }} ₾</p>
+        <s style="color: red;"><p style="color: rgb(73,73,73); font-weight: 700; margin-left: 5px;"><span>{{ product['old-price'] }} ₾</span></p></s>
+        {% endif %}
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;" class="meoremxare">
+            <p style="font-size: 12px; display: inline; font-weight: 600;">თვეში: <span style="color: rgb(236,94,42);">{{ product['nagdimonthly'] }} ₾</span> - დან</p>
+        </div> 
+    </div>
+    <div class="tetra"></div>
+    <div class="gbottom">
+        <div class="btnxaz">
+            <button><i class="bi bi-geo-alt"></i> მარაგი ფილიალებში</button>
+            <button><i class="bi bi-shield-lock"></i> ფასის დაზღვევა</button>
+        </div>
+        <div class="btnxaz">
+            <button><i class="bi bi-eye"></i> &nbsp; ფასის კონტროლი</button>
+            <button><i class="bi bi-lock"></i> ფასის დაჯავშნა</button>
+        </div>
+    </div>
+    <div class="tetra"></div>
+    <div class="vafshebottom">
+        <button class="yidva">ყიდვა</button>
+        <div class="meorebtnxazi">
+            <button class="shedareba"><i class="bi bi-arrow-left-right"></i> შედარება</button>
+            <a style="text-decoration: none; color: black;" href="{{ url_for('add_to_cart', product_id=product['id']) }}" class="damateba">
+                <i class="bi bi-cart"></i> დამატება
+            </a>            
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+{% endblock %}
+
+{% block js %} <script src="/static/scripts/app.js"></script> {% endblock%}
