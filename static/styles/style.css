@@ -1575,6 +1575,9 @@ footer .bi-arrow-up {
   footer .texts {
     flex-direction: column;
   }
+  .sulswrafi {
+    padding: 30px 140px;
+  }
   .sulswrafi h2 {
     font-size: 20px;
   }
